@@ -98,7 +98,7 @@
       </b-row>
     </b-container>
     <b-container class="py-5">
-      <b-card-group class="d-none d-md-block" columns>
+      <b-card-group columns>
                <b-card
                   img-src="/winesoap2.png"
                   img-alt="Image"
