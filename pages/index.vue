@@ -1,10 +1,17 @@
 <template>
   <div>
+
+    <b-navbar variant="faded" type="light" style="background-color: purple">
+    <b-navbar-brand href="#">
+      <img width="50%" src="/logo2.png" alt="logo">
+    </b-navbar-brand>
+  </b-navbar>
+    
     <video width="100%" height="100%" autoplay playsinline muted loop>
       <source src="/realvideo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <b-container class="py-5">
+    <b-container class="py-5" >
       <h1
         class="text-center"
         style="text-align: center; font-family: 'Athiti'; color: purple"
@@ -17,6 +24,7 @@
         region; environmentally friendly and not tested on animals.
       </h3>
     </b-container>
+   
     <b-container class="text-center py-5" >
          
          <b-row align-h="center"  align-v="center" no-gutters>
@@ -61,10 +69,10 @@
                </div>
             </b-col>
          </b-row>
-      </b-container>
-    <b-container class="py-5">
+    </b-container>
+    <b-container class="py-2 py-md-5">
       <b-row align-h="center" align-v="center">
-        <b-col class="py-5" cols="12" md="6" sm="12">
+        <b-col class="py-5" cols="12" md="6" sm="12" >
           <h2
             class="text-center py-3"
             style="font-family: 'Athiti'; color: purple"
@@ -86,7 +94,7 @@
             for "PH" because our soaps proudly contain a neutral pH.
           </p>
         </b-col>
-        <b-col cols="12" md="6" sm="12">
+        <b-col cols="12" md="6" sm="12" >
           <b-card
             img-src="/together.png"
             style="max-width: 40rem"
@@ -97,7 +105,8 @@
         </b-col>
       </b-row>
     </b-container>
-    <b-container class="py-5">
+    <b-container class="py-5 d-none d-md-block">
+      <h1 class="text-center" style="font-family: 'Allura'; color: purple">Products</h1>
       <b-card-group columns>
                <b-card
                   img-src="/winesoap2.png"
@@ -143,9 +152,35 @@
                   ></b-card>
       </b-card-group>
     </b-container>
+    <b-container class="d-block d-md-none">
+      <h1 class="text-center" style="font-family: 'Allura'; color: purple">Products</h1>
+      <b-carousel
+        id="carousel-fade"
+        style="text-shadow: 0px 0px 2px #000"
+        fade
+        indicators
+      >
+        <b-carousel-slide
+         
+          img-src="/winesoap2.png"
+        ></b-carousel-slide>
+        <b-carousel-slide
+         
+          img-src="/lavandersoap.png"
+        ></b-carousel-slide>
+        <b-carousel-slide
+  
+          img-src="/oatmealmilk.png"
+        ></b-carousel-slide>
+         <b-carousel-slide
+  
+          img-src="/charcoalsoap.png"
+        ></b-carousel-slide>
+      </b-carousel>
+    </b-container>
     <b-container class="py-5">
       <b-row align-v="center">
-        <b-col cols="12" md="6" sm="12">
+        <b-col cols="12" md="6" sm="12" >
           <b-card
             img-src="/ceo.png"
             img-alt="Image"
@@ -153,7 +188,7 @@
             overlay
           ></b-card>
         </b-col>
-        <b-col cols="12" md="6" sm="12">
+        <b-col class="pt-3" cols="12" md="6" sm="12" >
           <h1 style="text-align: center; font-family: 'Allura'; color: purple">
             Alejandra Correa Terán.
           </h1>
@@ -175,41 +210,35 @@
         </b-col>
       </b-row>
     </b-container>
-    <b-container fluid class="bg-primary text-center">
+    <b-container fluid class="text-center text-white" style="background-color: rgb(153, 86, 153);">
          <b-row class="p-4" align-v="center" align-h="center">
             <b-col cols="12" md="auto" sm="12" class="mr-auto p-3 px-md-5">
                <div class="d-block d-md-none py-3">
                   <b-btn class="p-0" href="//twitter.com/theheistworld" variant="link">
-                     <img style="width: 2rem;" class="mx-2" src="/mobile/twittermobile.svg"></img>
+                     <img  class="mx-2" src="/mobile/insta.svg"></img>
                   </b-btn>
-                  <b-btn class="p-0" href="//discord.com/invite/theheistworld" variant="link">
-                     <img style="width: 3rem;" class="mx-1" src="/mobile/discordmobile.svg"></img>
+                  <b-btn class="p-0" href="//www.facebook.com/viniphera" variant="link">
+                     <img  class="mx-1" src="/mobile/facebook.svg"></img>
                   </b-btn>
                   <b-btn class="p-0" href="//opensea.io/collection/the-heist-collection" variant="link">
-                     <img style="max-width: 3rem;" class="mx-2" src="/mobile/openseamobile.svg"></img>
-                  </b-btn>
-                  <b-btn class="p-0" href="//etherscan.io/address/0xcF8009F8E3446296d02B63d43E8066D130ce27B3" variant="link">
-                     <img style="max-width: 2rem;" class="mx-2" src="/mobile/etherscanmobile.svg"></img>
+                     <img  class="mx-2" src="/mobile/amazon.svg"></img>
                   </b-btn>
                </div>
                
-               <div>2022 Viníphera ™</div>
+               <img class="mx-2" src="/logo.png"></img>
             </b-col>
             <b-col cols="12" md="auto" sm="12" class="ml-auto "
                >
 
                <div class="d-none d-md-block">
-                 <b-btn class="p-0" href="//twitter.com/theheistworld" variant="link">
-                     <img style="width: 2rem;" class="mx-2" src="/mobile/twittermobile.svg"></img>
+                  <b-btn class="p-0" href="//twitter.com/theheistworld" variant="link">
+                     <img  class="mx-2" src="/mobile/insta.svg"></img>
                   </b-btn>
-                  <b-btn class="p-0" href="//discord.com/invite/theheistworld" variant="link">
-                     <img style="width: 3rem;" class="mx-1" src="/mobile/discordmobile.svg"></img>
+                  <b-btn class="p-0" href="//www.facebook.com/viniphera" variant="link">
+                     <img  class="mx-1" src="/mobile/facebook.svg"></img>
                   </b-btn>
                   <b-btn class="p-0" href="//opensea.io/collection/the-heist-collection" variant="link">
-                     <img style="max-width: 3rem;" class="mx-2" src="/mobile/openseamobile.svg"></img>
-                  </b-btn>
-                  <b-btn class="p-0" href="//etherscan.io/address/0xcF8009F8E3446296d02B63d43E8066D130ce27B3" variant="link">
-                     <img style="max-width: 2rem;" class="mx-2" src="/mobile/etherscanmobile.svg"></img>
+                     <img  class="mx-2" src="/mobile/amazon.svg"></img>
                   </b-btn>
                </div>
                 
@@ -221,7 +250,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+   data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+};
 </script>
 
 <style>
