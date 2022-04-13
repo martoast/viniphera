@@ -1,7 +1,8 @@
 <template>
    <div>
-     <div style="background: rgb(153,86,153);
-         background: linear-gradient(90deg, rgba(153,86,153,1) 0%, rgba(60,4,88,1) 100%); height:100vh;">
+
+     
+     <div style="background: linear-gradient(90deg, rgba(153,86,153,1) 0%, rgba(60,4,88,1) 100%); height:100vh;">
           <b-navbar type="light">
          <b-navbar-brand href="#">
             <img width="50%" src="/logo2.png" alt="logo">
