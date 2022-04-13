@@ -1,13 +1,12 @@
 <template>
-   <div >
-      <b-navbar type="light" style="background: rgb(153,86,153);
-         background: linear-gradient(90deg, rgba(153,86,153,1) 0%, rgba(60,4,88,1) 100%);"  >
+   <div>
+     <div style="background: rgb(153,86,153);
+         background: linear-gradient(90deg, rgba(153,86,153,1) 0%, rgba(60,4,88,1) 100%); height:100vh;">
+          <b-navbar type="light">
          <b-navbar-brand href="#">
             <img width="50%" src="/logo2.png" alt="logo">
          </b-navbar-brand>
       </b-navbar>
-      <div style="background: rgb(153,86,153);
-         background: linear-gradient(90deg, rgba(153,86,153,1) 0%, rgba(60,4,88,1) 100%); height:100vh;">
         <b-container>
         <b-row  align-h="center" align-v="center" style="height:85vh;">
          <b-col cols="12" md="6" sm="12">
@@ -21,13 +20,15 @@
             </h1>
             <h3 style="font-family: 'Athiti'">
                Naturally produced Soap Bars, free of
-               sulfates and parabens, not tested on animals.
+               sulfates/parabens and not tested on animals.
             </h3>
          </b-col>
       </b-row>
      </b-container>
 
-      </div>
+     </div>
+     
+
      
       <b-container class="text-center py-5" >
          <b-row align-h="center"  align-v="center" no-gutters>
@@ -89,7 +90,7 @@
             </b-col>
             <b-col cols="12" md="6" sm="12" >
                <b-card
-                  img-src="/winesoap2.png"
+                  img-src="/winesoap.png"
                   style="max-width: 40rem"
                   img-alt="Image"
                   class="border-0"
